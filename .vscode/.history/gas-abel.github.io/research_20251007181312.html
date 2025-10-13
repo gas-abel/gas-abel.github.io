@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Gaspard Abel's webpage</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+          $(document).ready(function() {
+              $("#nav-placeholder").load("navbar.html")
+          })
+        </script>
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <h1>Research</h1>
+
+        <div id="wid1">
+            <div style="display: flex; align-items: left;">
+                <h2>Talks</h2>
+                <div style="flex: 1;">
+                    <p>
+                        This project is part of my PhD thesis, and focuses on the interplay between the dynamics of information diffusion in social networks and the content of the information spread. To model this, we use Multidimensional Marked Hawkes Processes, which are a class of Temporal Point Processes.
+                        <br>
+                        The article can be found here: <a href="https://arxiv.org/abs/2506.12842"> Uncovering Social Network Activity Using Joint User and Topic Interaction</a>.
+                    </p>
+                </div>
+                <div style="flex: 1">
+                    <h2>Publications</h2>
+                    <ul>
+                        <li>
+                            <a href="https://arxiv.org/abs/2506.12842">Uncovering Social Network Activity Using Joint User and Topic Interaction</a>, Gaspard Abel, Argyris Kalogeratos, Jean-Pierre Nadal, Julien Randon Furling, 2025.
+                        </li>
+                        <li>
+                            <a href="https://doi.org/10.21410/7E4/QPECFF">Mapping the French political Twittersphere: a socio-semantic network analysis of MPs and media outlets</a>, Clémence Vendeville, Gaspard Abel, Lionel Tabourier, 2025.
+                        </li>
+                </div>
+            </div>
+        </div>
+         <h2>Temporal Point Processes for information diffusion in social networks</h2>
+        <div id="wid2" style="margin: auto;">
+            <div style="display: flex; align-items: left;">
+                <div style="flex: 1;">
+                    <p>
+                        This project is part of my PhD thesis, and focuses on the interplay between the dynamics of information diffusion in social networks and the content of the information spread. To model this, we use Multidimensional Marked Hawkes Processes, which are a class of Temporal Point Processes.
+                        <br>
+                        The article can be found here: <a href="https://arxiv.org/abs/2506.12842"> Uncovering Social Network Activity Using Joint User and Topic Interaction</a>.
+                    </p>
+                </div>
+                <div style="flex: 1; text-align: right;">
+                    <figure style="display: inline-block; margin: 0;">
+                        <img src="/images/conceptual_view.png" alt="Conceptual view of the model" width="230" height="150">
+                        <img src="/images/MIC_layer.png" alt="Layered Visualization of the MIC model" width="230" height="150">
+                        <figcaption >Conceptual view of the MIC model </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+            <h2>A visualization tool for multilayer networks</h2>
+        <div id="wid2" style="margin: auto;">
+            <div style="margin-bottom: 0px;; padding: 16px;">
+                <p>
+                    MultilayerNetViz is a lightweight python module for the visualization of complex networks. It allows to represent the interactions within and between different layers of the network. This is especially useful for the study of socio-semantic networks. The package and documentation can be found on this github repo: <a href="https://github.com/gas-abel/MultiLayerNetViz">MultiLayerNetViz</a>
+                    <br>
+                    <br>
+                    <strong>Visualization examples:</strong>
+                </p>
+            </div>
+            <div style="display: flex; align-items: flex-start; border: 1px solid #ccc; padding: 16px;">
+                <div style="flex: 2; min-width: 0; margin-right: 32px;">
+                    <p><strong>2019 French Senate activity:</strong> The legislative process of the French Senate is characterized by a complex interplay of various factors, including political agendas, public opinion, and institutional dynamics. As seen on the occurrence of proposed amendments over time, there is a strong temporal clustering of legislative activities. A rich structure of interactions between different political actors can be observed, as well as on the topic of bills proposed.</p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <figure style="margin-bottom: 16px;">
+                        <img src="images/senat_spike_train.png" alt="Temporal view of the model" width="350" height="240">
+                        <figcaption>Temporal unfolding of the  senate groups political activity</figcaption>
+                    </figure>
+                </div>
+                <div style="flex: 1; text-align: right;">
+                    <figure>
+                        <img src="images/senat_network.png" alt="Network MPS Media Normalized" width="350" height="240">
+                        <figcaption>French senate and topic of amendments bi-layer network</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div style="display: flex; align-items: flex-start; border: 1px solid #ccc; padding: 16px;">
+                <div style="flex: 2; min-width: 0; margin-right: 32px;">
+                    <p><strong>Political Twittersphere :</strong> Another example of visualization using the Twitter activity of (ex-)Members of the French Parliament (MPs) and web domains (Media Outlets) <a href="https://doi.org/10.21410/7E4/QPECFF">[Vendeville, 2025]</a>. The dataset collects  political positions of both MPs and Media Outlets, calculated using <a href="https://www.chesdata.eu/ches-europe" >CHES (Chapel Hill Expert Survey)</a> [Jolly, 2022]. This survey evaluates the political position of agents in a multidimensional ideological space (eu position, l/r economy, nationalism, environment,...)
+                    To visualize the data, the ideological positions of the users are represented using PCA and the projection of these axes in the PCA. The network is then represented as a multilayer network, with one layer for the ideologies projected in the PCA, one for the MPs and another for the Media Outlets.
+                    </p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <figure style="margin-bottom: 16px;">
+                        <img src="images/network_mps_media_normalized.png" alt="Temporal view of the model" width="600" height="500">
+                        <figcaption>Temporal unfolding of the  senate groups political activity</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

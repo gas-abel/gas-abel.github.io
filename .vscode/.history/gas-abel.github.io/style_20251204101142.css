@@ -20,14 +20,6 @@
     margin: auto;
 }
 
-.scroll-box {
-            width: 500px;
-            height: 355px;
-            overflow: scroll;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-
 #borderimg {
   border: 10px solid transparent;
   padding: 15px;
@@ -129,7 +121,7 @@ nav .summary {
 }
 
 .summary:hover {
-  transform: scale(1.0);
+  transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 

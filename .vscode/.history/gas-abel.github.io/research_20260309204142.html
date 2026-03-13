@@ -44,7 +44,7 @@
                     <p>
                         • <a href="https://arxiv.org/abs/2602.15634" target="_blank" rel="noopener noreferrer"> Beyond ReLU: Bifurcation, Oversmoothing, and Topological Priors</a>, submitted to ICML 2026. <i>Erkan Turan, Gaspard Abel, Maysam Behmanesh, Emery Pierson, Maks Ovsjanikov.</i>
                         <br>
-                        • <a href="https://arxiv.org/abs/2506.12842v2" target="_blank" rel="noopener noreferrer">Uncovering Social Network Activity Using Joint User and Topic Interaction</a>, <a href="https://ieeexplore.ieee.org/document/11421347" target="_blank" rel="noopener noreferrer">accepted in</a> IEEE Transactions On Computational Social Systems</a>. <i>Gaspard Abel, Argyris Kalogeratos, Jean-Pierre Nadal, Julien Randon Furling.</i>
+                        • <a href="https://arxiv.org/abs/2506.12842" target="_blank" rel="noopener noreferrer">Uncovering Social Network Activity Using Joint User and Topic Interaction</a>, <a href="https://ieeexplore.ieee.org/document/11421347" target="_blank" rel="noopener noreferrer">accepted in</a> IEEE Transactions On Computational Social Systems</a>. <i>Gaspard Abel, Argyris Kalogeratos, Jean-Pierre Nadal, Julien Randon Furling.</i>
                         <br>
                         • <a href="https://arxiv.org/abs/2006.13395"
                         target="_blank" rel="noopener noreferrer">Reducing Recurrent Competitive Epidemics via Dynamic Resource Allocation</a>, submitted to IEEE Transactions on Network Science and Engineering. <i>Argyris Kalogeratos, Gaspard Abel, Stefano Sarao Mannelli.</i>
@@ -55,21 +55,21 @@
 
         <div id="wid2" style="margin: auto; border: 1px solid #ccc; margin-bottom: auto; margin-top: 10px;">
             <h2>Temporal Point Processes for information diffusion in social networks</h2>
-            <div style="display: flex; padding: 16px; gap: 16px;">
-                <div style="flex: 1;">
-                    <p>
-                    This project focuses on the interplay between the dynamics of information diffusion in social networks and the content of the information spread. To model this, we use Multidimensional Marked Hawkes Processes, which are a class of Temporal Point Processes.
-                    <br>
-                    The article can be found here: <a href="https://arxiv.org/abs/2506.12842v2" target="_blank" rel="noopener noreferrer"> Uncovering Social Network Activity Using Joint User and Topic Interaction, IEEE Transactions on Computational Social Systems</a>.
-                    </p>
-                </div>
-                <div style="flex: 1; text-align: center;">
-                    <figure style="display: inline-block; margin: 0;">
-                    <img src="/images/conceptual_view.png" alt="Conceptual view of the model" width="230" height="150">
-                    <img src="/images/MIC_layer.png" alt="Layered Visualization of the MIC model" width="230" height="150">
-                    <figcaption>Conceptual view of the MIC model</figcaption>
-                    </figure>
-                </div>
+            <div style="display: flex">
+            <div style="flex: 1;">
+                <p>
+                This project focuses on the interplay between the dynamics of information diffusion in social networks and the content of the information spread. To model this, we use Multidimensional Marked Hawkes Processes, which are a class of Temporal Point Processes.
+                <br>
+                The article can be found here: <a href="https://arxiv.org/abs/2506.12842" target="_blank" rel="noopener noreferrer"> Uncovering Social Network Activity Using Joint User and Topic Interaction</a>.
+                </p>
+            </div>
+            <div style="flex: 1; text-align: center;">
+                <figure style="display: inline-block; margin: 0;">
+                <img src="/images/conceptual_view.png" alt="Conceptual view of the model" width="230" height="150">
+                <img src="/images/MIC_layer.png" alt="Layered Visualization of the MIC model" width="230" height="150">
+                <figcaption>Conceptual view of the MIC model</figcaption>
+                </figure>
+            </div>
             </div>
         </div>
         <div id="wid2" style="margin: auto; border: 1px solid #ccc;margin-top: 10px;">
@@ -129,66 +129,8 @@
                 </figure>
             </div>
             </div>
-        </div>
 
-
-        <div id="wid2" style="margin: auto; border: 1px solid #ccc; margin-bottom: auto; margin-top: 10px;">
-            <h2>A dynamical system approach to oversmoothing in GNNs</h2>
-            <div style="padding: 16px;">
-                <p>
-                This project focuses on the phenomenon of oversmoothing in Graph Neural Networks (GNNs), which occurs when the representations of nodes in a graph become indistinguishable after multiple layers of message passing.
-                </p>
-                <div style="display: flex; justify-content: center; margin: 16px 0;">
-                    <figure style="margin: 0; text-align: center;">
-                    <img src="images/Beyond_ReLU_img.png" alt="Conceptual view of the model" width="700" height="240">
-                    <figcaption>Distinct regimes of GNN learning dynamics.</figcaption>
-                    </figure>
-                </div>
-                <div class="details">
-                    <nav>
-                    <span class="summary" style="cursor: pointer; color: #4f4974; text-decoration: underline;">Abstract</span>
-                    </nav>
-                    <div class="summary-target" style="margin-top: 10px;">
-                    <p>
-                    Graph Neural Networks (GNNs) learn node representations through iterative network-based message-passing. While powerful, deep GNNs suffer from oversmoothing, where node features converge to a homogeneous, non-informative state. We re-frame this problem of representational collapse from a bifurcation theory perspective, characterizing oversmoothing as convergence to a stable ``homogeneous fixed point.'' Our central contribution is the theoretical discovery that this undesired stability can be broken by replacing standard monotone activations (e.g., ReLU) with a class of functions. Using Lyapunov-Schmidt reduction, we analytically prove that this substitution induces a bifurcation that destabilizes the homogeneous state and creates a new pair of stable, non-homogeneous patterns that provably resist oversmoothing. Our theory predicts a precise, nontrivial scaling law for the amplitude of these emergent patterns, which we quantitatively validate in experiments. Finally, we demonstrate the practical utility of our theory by deriving a closed-form, bifurcation-aware initialization and showing its utility in real benchmark experiments.
-                    </p>
-                    </div>
-                </div>
-                <br>
-                The article can be found here: <a href="https://arxiv.org/abs/2602.15634" target="_blank" rel="noopener noreferrer"> Beyond ReLU: Bifurcation, Oversmoothing, and Topological Priors</a>.
-            </div>
-        </div>
-        <div id="wid2" style="margin: auto; border: 1px solid #ccc; margin-bottom: auto; margin-top: 10px;">
-            <h2>Dynamic Resource Allocation for Recurrent Epidemics</h2>
-            <div style="display: flex; padding: 16px; gap: 16px;">
-                <div style="flex: 1;">
-                    <p>
-                    This project proposes a greedy algorithm for dynamic resource allocation for recurrent and competitive epidemics.
-                    </p>
-                    <div class="details">
-                        <nav>
-                        <span class="summary" style="cursor: pointer; color: #4f4974; text-decoration: underline;">Abstract</span>
-                        </nav>
-                        <div class="summary-target" style="margin-top: 10px;">
-                        <p>
-                            Motivated by scenarios of epidemic competition, as well as how social contagions spread at the level of individuals, this work considers the competition between two conflicting node states that spread over a social graph according to a generic diffusion process. For this setting, we introduce the Generalized Largest Reduction in Infectious Edges (gLRIE), which is a dynamic resource allocation strategy that favors the preferred state against the other. Our analysis assumes a generic continuous-time SIS-like (Susceptible-Infectious-Susceptible) diffusion model that allows for: arbitrary node transition rate functions for nodes to change state, and competition between the healthy (positive) and infected (negative) states, which are both diffusive at the same time, yet mutually exclusive at each node. The strategy follows a minimum-risk-maximum-gain principle, and its features are particularly relevant for social contagion phenomena. In accordance with the LRIE strategy that we generalize, we show that in this context the gLRIE strategy remains a greedy solution for the minimization of the number of infected network nodes over time. Ultimately, simulations are employed to compare the proposed strategy with other existing alternatives, demonstrating that gLRIE exhibits superior performance across a spectrum of scenarios, including a realistic counter-contagion campaign in a small well-monitored community.
-                        </p>
-                        </div>
-                    </div>
-                    <br>
-                    The article can be found here: <a href="https://arxiv.org/abs/2006.13395" target="_blank" rel="noopener noreferrer">Reducing Recurrent Competitive Epidemics via Dynamic Resource Allocation</a>.
-                </div>
-                <div style="flex: 1; text-align: center;">
-                    <figure style="display: inline-block; margin: 0;">
-                    <img src="images/gLRIE_contact.png" alt="Contact network with transmission rates" width="320" height="320">
-                    <figcaption>Contact network with competitive transmission rates.</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-
-        </div>
-        <script>
+            <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const summaries = document.querySelectorAll('.details .summary');
 
@@ -204,5 +146,51 @@
                 });
             });
             </script>
+        </div>
+        <div id="wid2" style="margin: auto; border: 1px solid #ccc; margin-bottom: auto; margin-top: 10px;">
+            <h2>A dynamical system approach to oversmoothing in GNNs</h2>
+            <div style="display: flex">
+            <div style="flex: 1;">
+                <p>
+                This project focuses on the phenomenon of oversmoothing in Graph Neural Networks (GNNs), which occurs when the representations of nodes in a graph become indistinguishable after multiple layers of message passing.
+                </p>
+                <nav>
+                <span class="summary" style="cursor: pointer; color: #4f4974; text-decoration: underline;">Abstract</span>
+                </nav>
+                <div class="summary-target" style="margin-top: 10px;">
+                <p>
+                We propose a new paradigm for understanding oversmoothing by modeling GNNs as discrete-time dynamical systems. We analyze the stability of these systems and identify conditions under which oversmoothing occurs and the underlying role of activation functions in this phenomenon.
+                </p>
+                </div>
+                <br>
+                The article can be found here: <a href="https://arxiv.org/abs/2602.15634" target="_blank" rel="noopener noreferrer"> Beyond ReLU: Bifurcation, Oversmoothing, and Topological Priors</a>.
+                </p>
+            </div>
+            <div style="display: flex; gap: 20px; margin-top: 16px; justify-content: center;">
+                <figure style="margin: 0; text-align: center;">
+                <img src="/images/conceptual_view.png" alt="Conceptual view of the model" width="230" height="150">
+                <img src="/images/MIC_layer.png" alt="Layered Visualization of the MIC model" width="230" height="150">
+                <figcaption>Conceptual view of the MIC model</figcaption>
+                </figure>
+            </div>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const summaries = document.querySelectorAll('.details .summary');
+
+                summaries.forEach(summary => {
+                summary.addEventListener('click', function() {
+                    const target = this.parentElement.nextElementSibling;
+                    if (target.style.display === 'none' || target.style.display === '') {
+                    target.style.display = 'block';
+                    } else {
+                    target.style.display = 'none';
+                    }
+                });
+                });
+            });
+            </script>
+            </div>
+        </div>
+        </div>
     </body>
 </html>

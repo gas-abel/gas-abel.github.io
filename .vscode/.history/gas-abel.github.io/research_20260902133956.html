@@ -42,9 +42,6 @@
                 <div class="scroll-box">
                     <h2>Publications</h2>
                     <p>
-                        • <a href="https://arxiv.org/abs/2608.01406"
-                        target="_blank" rel="noopener noreferrer">Algorithmic collusion under asynchronous price updating</a>, to be submitted, 2026. <i>Ivan Conjeaud, Gaspard Abel, Argyris Kalogeratos. </i>
-                        <br>
                         • <a href="https://arxiv.org/abs/2602.15634" target="_blank" rel="noopener noreferrer"> Beyond ReLU: Bifurcation, Oversmoothing, and Topological Priors</a>, accepted at ICML 2026 (spotlight). <i>Erkan Turan, Gaspard Abel, Maysam Behmanesh, Emery Pierson, Maks Ovsjanikov.</i>
                         <br>
                         • <a href="https://arxiv.org/abs/2506.12842v2" target="_blank" rel="noopener noreferrer">Uncovering Social Network Activity Using Joint User and Topic Interaction</a>, <a href="https://ieeexplore.ieee.org/document/11421347" target="_blank" rel="noopener noreferrer">accepted in</a> IEEE Transactions On Computational Social Systems, 2026</a>. <i>Gaspard Abel, Argyris Kalogeratos, Jean-Pierre Nadal, Julien Randon Furling.</i>
@@ -220,21 +217,17 @@
 
             </div>
         </div>
-        <div id="wid2" style="margin: auto; border: 1px solid #ccc; margin-bottom: auto; margin-top: 10px;">
+        <divid="wid2" style="margin: auto; border: 1px solid #ccc; margin-bottom: auto; margin-top: 10px;">
             <h2>Algorithmic collusion under asynchronous price updating</h2>
             <div style="display: flex; padding: 16px; gap: 16px;">
                 <div style="flex: 1;">
                     <p>
-                    This project explores the effect of asynchrony in the learning behavior of algorithmic pricing agents.
+                    This project investigates how density and loss-based strategies can provide complementary criterion for difficulty assessment in Curriculum Learning. We propose a modular framework to study this and evaluate on a time-series forecasting task.
                     </p>
                     <div style="flex: 1; text-align: center;">
                     <figure style="display: inline-block; margin: 0;">
-                    <img src="images/q_ind_ACAPU.png" alt="Schematic illustration of the asynchronous action selection process." width="600" height="150">
-                    <figcaption>Schematic illustration of the asynchronous action selection process.</figcaption>
-                    </figure>
-                    <figure style="display: inline-block; margin: 0;">
-                    <img src="images/resp_graph_ACAPU.png" alt="Response graphs for different values of asynchrony." width="600" height="260">
-                    <figcaption>Response graphs for different values of asynchrony.</figcaption>
+                    <img src="images/DCCL_scatter.png" alt="Scatterplot of instance difficulty for different Curriculum Learning strategies" width="700" height="220">
+                    <figcaption>Scatterplot of instance difficulty for different Curriculum Learning strategies.</figcaption>
                     </figure>
                     </div>
                     <div class="details">
@@ -243,12 +236,12 @@
                         </nav>
                         <div class="summary-target" style="margin-top: 10px;">
                         <p>
-                            This paper investigates the effect of asynchrony in agents' updates in the emergence of algorithmic collusion. We present a continuous-time model for algorithmic collusion in which two firms use Q-learning algorithms to set  prices asynchronously in a Bertrand duopoly. The firms update their prices at times dictated by a Poisson clock. By controlling the extent of agents' asynchrony, we run extensive numerical experiments with three specifications of the algorithm to investigate the emergence of algorithmic collusion. The strength of collusion is measured by a standard collusion index, as well as by  automatically detecting the reward-punishment schemes. This is done by recording a large number of algorithms' reactions to unilateral price cuts and comparing them with the reactions of untrained algorithms. Our findings indicate that asynchrony hampers collusion, especially when the algorithms are stateless. When they condition on their competitor's previous prices, the sensitivity of algorithmic collusion to asynchrony varies depending on the type of information they have access to.  The implications of these results for the regulation of algorithmic pricing are discussed.
+                            Curriculum Learning (CL) is a meta-learning paradigm that trains a model by feeding the data instances incrementally according to a schedule, which is based on diﬃculty progression. Defining meaningful diﬃculty assessment measures is crucial and most usually the main bottleneck for eﬀective learning, while also in many cases the employed heuristics are only application-specific. In this work, we propose the Dual-Criterion Curriculum Learning (DCCL) framework that combines two views of assessing instance-wise diﬃculty: a loss-based criterion is complemented by a density-based criterion learned in the data repre- sentation space. Essentially, DCCL calibrates training-based evidence (loss) under the consideration that data sparseness amplifies the learning diﬃculty. As a testbed, we choose the time-series forecasting task. We evaluate our framework on multivariate time-series benchmarks under standard One-Pass and Baby-Steps training schedules. Empirical results show the interest of density-based and hybrid dual-criterion curricula over loss-only baselines and standard non-CL training in this setting.
                         </p>
                         </div>
                     </div>
                     <br>
-                    The draft of this article can be found here <a href="https://arxiv.org/abs/2608.01406" target="_blank" rel="noopener noreferrer">Algorithmic collusion under asynchronous price updating</a>.
+                    The draft of this article can be found here <a href="http://arxiv.org/abs/2603.23573" target="_blank" rel="noopener noreferrer">Dual-Criterion Curriculum Learning: Application to Temporal Data</a>.
                 </div>
         </div>
         </div>

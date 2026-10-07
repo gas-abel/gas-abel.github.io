@@ -64,22 +64,14 @@
             </div>
 
             <div class="interests reveal">
-                <p>My research interests are numerous and include: <span class="hint">(click one to find the related projects)</span></p>
+                <p>My research interests are numerous and include:</p>
                 <ul class="chips">
-                    <li>Temporal point processes</li>
-                    <li>Diffusion on graphs</li>
-                    <li>Social networks</li>
-                    <li>Multilayer networks</li>
-                    <li>Computational social science</li>
-                    <li>Graph neural networks</li>
-                    <li>Dynamical systems</li>
-                    <li>Representation learning</li>
-                    <li>Machine learning</li>
-                    <li>Epidemic processes</li>
-                    <li>Curriculum learning</li>
-                    <li>Transformers</li>
-                    <li>Reinforcement learning</li>
-                    <li>Algorithmic pricing</li>
+                    <li>Temporal Point Processes</li>
+                    <li>Graph Theory</li>
+                    <li>Epidemic Processes</li>
+                    <li>Learning Theory</li>
+                    <li>Computational Social Science</li>
+                    <li>Visualization methods</li>
                 </ul>
             </div>
         </section>
@@ -226,17 +218,11 @@
                             <li>Temporal data</li>
                         </ul>
                         <p class="project-paper"><span>Paper</span><a href="https://arxiv.org/abs/2506.12842v2">Uncovering Social Network Activity Using Joint User and Topic Interaction</a>, IEEE Transactions on Computational Social Systems, 2026.</p>
-                        <p class="actions">
-                            <button class="pill" type="button" aria-expanded="false" aria-controls="abs-hawkes">Abstract <span class="plus" aria-hidden="true"></span></button>
-                        </p>
-                        <div class="collapsible" id="abs-hawkes">
-                            <div><p class="abstract">The emergence of online social platforms, such as social networks and social media, has drastically affected the way people apprehend the information flows to which they are exposed. In such platforms, various information cascades spreading among users is the main force creating complex dynamics of opinion formation, each user being characterized by their own behavior adoption mechanism. Moreover, the spread of multiple pieces of information or beliefs in a networked population is rarely uncorrelated. In this paper, we introduce the Mixture of Interacting Cascades (MIC), a model of marked multidimensional Hawkes processes with the capacity to model jointly non-trivial interaction between cascades and users. We emphasize on the interplay between information cascades and user activity, and use a mixture of temporal point processes to build a coupled user/cascade point process model. Experiments on synthetic and real data highlight the benefits of this approach and demonstrate that MIC achieves superior performance to existing methods in modeling the spread of information cascades. Finally, we demonstrate how MIC can provide, through its learned parameters, insightful bi-layered visualizations of real social network activity data.</p></div>
-                        </div>
                     </div>
                 </article>
 
                 <!-- 02 -->
-                <article id="p-netviz" class="project" data-nav="MultilayerNetViz">
+                <article id="p-netviz" class="project project--wide" data-nav="MultilayerNetViz">
                     <div class="project-card reveal">
                         <p class="project-kicker"><span class="project-num">02</span></p>
                         <h4>A visualization tool for multilayer networks</h4>
@@ -294,8 +280,8 @@
                 </article>
 
                 <!-- 03 -->
-                <article id="p-gnn" class="project" data-nav="Oversmoothing in GNNs">
-                    <div class="project-media reveal">
+                <article id="p-gnn" class="project project--flip" data-nav="Oversmoothing in GNNs">
+                    <div class="project-media reveal" style="--accent: var(--link-color)">
                         <figure class="project-figure zoomable">
                             <img src="images/Beyond_ReLU_img.png" alt="Distinct regimes of GNN learning dynamics" width="2144" height="708" loading="lazy">
                             <figcaption>Distinct regimes of GNN learning dynamics.</figcaption>
@@ -309,7 +295,7 @@
                             <li>Graph neural networks</li>
                             <li>Diffusion on graphs</li>
                             <li>Dynamical systems</li>
-                            <li>Representation learning</li>
+                            <li>Bifurcation theory</li>
                             <li>Machine learning</li>
                         </ul>
                         <p class="project-paper"><span>Paper</span><a href="https://arxiv.org/abs/2602.15634">Beyond ReLU: Bifurcation, Oversmoothing, and Topological Priors</a>, accepted at ICML 2026 (spotlight).</p>
@@ -324,7 +310,7 @@
 
                 <!-- 04 -->
                 <article id="p-epidemics" class="project" data-nav="Recurrent epidemics">
-                    <div class="project-media reveal">
+                    <div class="project-media project-media--narrow reveal">
                         <figure class="project-figure zoomable">
                             <img src="images/gLRIE_contact.png" alt="Contact network with competitive transmission rates" width="1052" height="1044" loading="lazy">
                             <figcaption>Contact network with competitive transmission rates.</figcaption>
@@ -352,8 +338,8 @@
                 </article>
 
                 <!-- 05 -->
-                <article id="p-curriculum" class="project" data-nav="Curriculum learning">
-                    <div class="project-media reveal">
+                <article id="p-curriculum" class="project project--flip" data-nav="Curriculum learning">
+                    <div class="project-media reveal" style="--accent: var(--link-color)">
                         <figure class="project-figure zoomable">
                             <img src="images/DCCL_scatter.png" alt="Scatterplot of instance difficulty for different Curriculum Learning strategies" width="1406" height="438" loading="lazy">
                             <figcaption>Scatterplot of instance difficulty for different Curriculum Learning strategies.</figcaption>
@@ -366,8 +352,8 @@
                         <ul class="keywords" aria-label="Keywords">
                             <li>Curriculum learning</li>
                             <li>Temporal data</li>
-                            <li>Representation learning</li>
-                            <li>Transformers</li>
+                            <li>Forecasting</li>
+                            <li>Density estimation</li>
                             <li>Machine learning</li>
                         </ul>
                         <p class="project-paper"><span>Draft</span><a href="http://arxiv.org/abs/2603.23573">Dual-Criterion Curriculum Learning: Application to Temporal Data</a>.</p>
@@ -412,34 +398,33 @@
                     </div>
                 </article>
                 <!-- 07 -->
-                <article id="p-transformer" class="project" data-nav="Transformer Patterns">
+                <article id="p-collusion" class="project" data-nav="Transformer Patterns">
                     <div class="project-media reveal">
                         <figure class="project-figure zoomable">
-                            <!-- <div class="figure-stack"> -->
-                                <img src="images/trav_wave_transformer.png" alt="Taxonomy of patterns in Transformers" width="1406" height="483" loading="lazy">
-                                <!-- <img src="images/tasks_transformer.png" alt=" Task–initialization alignment" width="1864" height="924" loading="lazy"> -->
-                            <!-- </div> -->
-                            <figcaption>Taxonomy of patterns in Transformers (top)</figcaption>
+                            <div class="figure-stack">
+                                <img src="images/patterns_representation.png" alt="Taxonomy of patterns in Transformers" width="1578" height="408" loading="lazy">
+                                <img src="images/task_alignement.png" alt=" Task–initialization alignment" width="1864" height="924" loading="lazy">
+                            </div>
+                            <figcaption>Taxonomy of patterns in Transformers (top).  Task–initialization alignment (bottom).</figcaption>
                         </figure>
                     </div>
                     <div class="project-card reveal">
-                        <p class="project-kicker"><span class="project-num">07</span></p>
+                        <p class="project-kicker"><span class="project-num">06</span></p>
                         <h4>Pattern formation in Transformers</h4>
                         <p>This work studies the Transformer architecture as a dynamical system: at initialization, its components define an inductive bias that allows for the emergence of token-feature representations.</p>
                         <ul class="keywords" aria-label="Keywords">
                             <li>Transformers</li>
-                            <li>Representation learning</li>
-                            <li>Dynamical systems</li>
-                            <li>Inductive Bias</li>
+                            <li>Machine Learning</li>
+                            <li>Dynamical Systems</li>
+                            <li>Temporal point processes</li>
                             <li>Machine learning</li>
                         </ul>
-                        <p class="project-paper"><span>Draft</span><a href="https://arxiv.org/abs/2609.37921">Pattern formation in Transformers</a>.</p>
+                        <p class="project-paper"><span>Draft</span><a href="https://arxiv.org/abs/2608.01406">Algorithmic collusion under asynchronous price updating</a>.</p>
                         <p class="actions">
-                            <button class="pill" type="button" aria-expanded="false" aria-controls="abs-transformer">Abstract <span class="plus" aria-hidden="true"></span></button>
+                            <button class="pill" type="button" aria-expanded="false" aria-controls="abs-collusion">Abstract <span class="plus" aria-hidden="true"></span></button>
                         </p>
-                        <div class="collapsible" id="abs-transformer">
-                            <div><p class="abstract"> What are the inductive biases of a Transformer architecture? Existing theory on how the forward pass shapes representations either considers whether Transformers escape from rank collapse or demonstrates that self-attention drives tokens toward cluster patterns. The latter view arises from an elegant dynamical systems perspective, but relies on simplified architectural assumptions, and does not ex-plain the rich structures observed in practice. This leaves a major open question:when a full Transformer escapes rank collapse, how does it structure token representations? Using pattern-formation theory, we show that the dynamical view of Transformers can account for Positional Encoding, Multi-Head Attention, and Output-Value geometry. We demonstrate that a full Transformer architecture imposes an inductive prior by selectively amplifying a rich set of previously unreported patterns, including traveling or rotating waves among others. We characterize the role of each architectural component in controlling which pattern is amplified, which ones stabilize, compete, or coexist. Finally, we show that these structures can act as a controllable dynamical prior that facilitates learning. By choosing both task-aligned positional encoding and weight initialization, we demonstrate improved data efficiency and accelerated optimization on controlled sequence tasks and with ConViT on CIFAR-10.
-                            </p></div>
+                        <div class="collapsible" id="abs-collusion">
+                            <div><p class="abstract">This paper investigates the effect of asynchrony in agents' updates in the emergence of algorithmic collusion. We present a continuous-time model for algorithmic collusion in which two firms use Q-learning algorithms to set prices asynchronously in a Bertrand duopoly. The firms update their prices at times dictated by a Poisson clock. By controlling the extent of agents' asynchrony, we run extensive numerical experiments with three specifications of the algorithm to investigate the emergence of algorithmic collusion. The strength of collusion is measured by a standard collusion index, as well as by automatically detecting the reward-punishment schemes. This is done by recording a large number of algorithms' reactions to unilateral price cuts and comparing them with the reactions of untrained algorithms. Our findings indicate that asynchrony hampers collusion, especially when the algorithms are stateless. When they condition on their competitor's previous prices, the sensitivity of algorithmic collusion to asynchrony varies depending on the type of information they have access to. The implications of these results for the regulation of algorithmic pricing are discussed.</p></div>
                         </div>
                     </div>
                 </article>
@@ -559,17 +544,6 @@
         </div>
         <ol class="finder-list"></ol>
     </div>
-
-    <!-- Abstract of the open project: sits in the left column, under the navbar
-         (on narrow screens the abstract opens inside the project instead). -->
-    <aside class="abstract-dock" id="abstract-dock" role="region" aria-label="Abstract">
-        <header class="dock-head">
-            <span class="project-num"></span>
-            <p class="dock-title"></p>
-            <button class="dock-close" type="button" aria-label="Close the abstract">×</button>
-        </header>
-        <div class="dock-body"><p class="abstract"></p></div>
-    </aside>
 
     <dialog class="lightbox" aria-label="Enlarged figure">
         <figure>

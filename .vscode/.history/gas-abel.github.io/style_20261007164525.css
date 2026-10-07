@@ -25,7 +25,6 @@
     /* the navbar width scales with the viewport */
     --nav-w: clamp(300px, 32.6vw, 470px);
     --nav-fs: clamp(44px, 4.86vw, 70px);
-    --nav-webring-fs: clamp(12px, 1.2vw, 14px);
     --gutter: clamp(20px, 5.5vw, 88px);
 }
 
@@ -124,7 +123,7 @@ a:hover {
     height: 50vh;
     /* max-height: 33.333vh; */
     padding: 0.85rem 0.55rem 0 0.95rem;
-    font-size: min(var(--nav-fs), calc((33.333vh - 1rem) / 4.4));
+    font-size: min(var(--nav-fs), calc((33.333vh - 2.5rem) / 4.4));
     line-height: 1.1;
     color: var(--link-color);
     background-color: var(--bg-color);
@@ -234,8 +233,8 @@ a:hover {
 
 .navbar .webring {
     margin: auto 0 0;
-    padding: 0em 0 1.1em;
-    font-size: var(--nav-webring-fs);
+    padding: 1.2em 0 1.1em;
+    font-size: 14px;
     text-align: right;
 }
 

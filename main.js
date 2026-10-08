@@ -295,11 +295,11 @@ function syncControls() {
 function resetAbstracts() {
   dockOwner = null;
   dock?.classList.remove("is-open");
-  navbar?.classList.remove("is-abstract-open");
   abstractButtons.forEach((button) => {
     button.setAttribute("aria-expanded", "false");
     inlinePanel(button)?.classList.remove("is-open");
   });
+  refreshDock();
 }
 
 // the panel only shows while its project is on screen
@@ -308,6 +308,8 @@ function refreshDock() {
   if (!dock) return;
   const away = !dockOwner || !onScreen.has(dockOwner.closest(".project"));
   dock.classList.toggle("is-away", away);
+  // the navbar is compact exactly while an abstract is visible under it
+  navbar?.classList.toggle("is-abstract-open", !away);
 }
 
 if (dock && "IntersectionObserver" in window) {
@@ -329,7 +331,6 @@ function openInDock(button) {
   dockText.textContent = inlinePanel(button).querySelector(".abstract").textContent.trim();
   dock.querySelector(".dock-body").scrollTop = 0;
   button.setAttribute("aria-expanded", "true");
-  navbar.classList.add("is-abstract-open");
   dock.classList.add("is-open");
   // a project that is only just visible should not hide its own abstract
   onScreen.add(project);

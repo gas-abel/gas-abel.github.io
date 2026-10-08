@@ -22,8 +22,11 @@
     --shadow-lift: 0 2px 4px rgba(38, 33, 58, 0.08), 0 22px 44px -16px rgba(38, 33, 58, 0.34);
     --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 
-    /* the navbar width scales with the viewport */
-    --nav-w: clamp(300px, 32.6vw, 470px);
+    /* the navbar is a square that scales with the viewport height; the page
+       column and the abstract cell use the same width, so nothing reflows */
+    --nav-w: clamp(260px, min(50vh, 40vw), 540px);
+    --nav-h-full: var(--nav-w);
+    --nav-h-compact: min(33vh, var(--nav-w));
     --nav-fs: clamp(44px, 4.86vw, 70px);
     --nav-webring-fs: clamp(12px, 1.2vw, 14px);
     --gutter: clamp(20px, 5.5vw, 88px);
@@ -119,22 +122,24 @@ a:hover {
     z-index: 20;
     display: flex;
     flex-direction: column;
-    /* width: var(--nav-w); */
-    width: 50vh;
-    height: 50vh;
-    /* max-height: 33.333vh; */
+    width: var(--nav-w);
+    height: var(--nav-h-full);
     padding: 0.85rem 0.55rem 0 0.95rem;
-    font-size: min(var(--nav-fs), calc((33.333vh - 1rem) / 4.4));
+    /* four lines + two trail lines + webring need about 5.3 x font-size + 45px */
+    font-size: min(var(--nav-fs), calc((var(--nav-h-full) - 3rem) / 5.4));
     line-height: 1.1;
     color: var(--link-color);
     background-color: var(--bg-color);
-    transition: max-height 0.35s var(--ease);
+    transition: height 0.45s var(--ease), font-size 0.45s var(--ease);
 }
 
-.navbar.is-abstract-open {
-    height: 33vh;
-    width: 33vh;
-    font-size: min(var(--nav-fs), calc((33vh - 5rem) / 4.4));
+/* While an abstract is showing under it, the navbar gives up some height.
+   It grows back when the abstract's project scrolls out of view. */
+@media (min-width: 861px) {
+    .navbar.is-abstract-open {
+        height: var(--nav-h-compact);
+        font-size: min(var(--nav-fs), calc((var(--nav-h-compact) - 3rem) / 5.4));
+    }
 }
 
 .navbar a {
